@@ -27,6 +27,8 @@ else if (eta > 65) {
     prezzo_finale = prezzo_base - sconto;
     // prezzo_finale = prezzo_base * 0.6
 }
+// Creo una nuova variabile
+let prezzo = prezzo_finale.toFixed(2);
+console.log(prezzo);
 
-
-console.log(prezzo_finale)
+document.getElementById('prezzo_finale').innerText = `Il prezzo finale è di: ${prezzo}€`;
