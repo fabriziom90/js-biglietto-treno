@@ -19,5 +19,13 @@ if (eta < 18) {
     prezzo_finale = prezzo_base - sconto;
     // prezzo_finale = prezzo_base * 0.8;
 }
+// : ALTRIMENTI SE l'età è superiore a 65 => applico uno sconto del 40%
+else if (eta > 65) {
+    // Calcolo a partire dal prezzo base lo sconto
+    let sconto = prezzo_base * 0.4;
+    // calcolo il prezzo finale
+    prezzo_finale = prezzo_base - sconto;
+    // prezzo_finale = prezzo_base * 0.6
+}
 
 console.log(prezzo_finale)
