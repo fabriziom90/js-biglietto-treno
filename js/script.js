@@ -8,7 +8,7 @@ let eta = prompt('Inserisci la tua età');
 let prezzo_base = km * 0.21;
 
 // Dichiaro una variabile che mi conterrà il prezzo finale
-let prezzo_finale;
+let prezzo_finale = prezzo_base;
 
 // SE l'età è inferiore a 18 => applico uno sconto del 20%
 if (eta < 18) {
@@ -27,5 +27,6 @@ else if (eta > 65) {
     prezzo_finale = prezzo_base - sconto;
     // prezzo_finale = prezzo_base * 0.6
 }
+
 
 console.log(prezzo_finale)
